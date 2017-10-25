@@ -1,5 +1,5 @@
 # SWE_WS1718
-Softwareentwicklung THM
+Vorlesung Softwareentwicklung THM
 
 ## Übung 1
 Wiederholung von Templates und Function pointer (nicht komplett)
