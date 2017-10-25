@@ -12,6 +12,8 @@ int main()
 	CBauelement b2(1.8850, CPunkt(1.5, 0.7));
 	CBauelement b3(0.50, CPunkt(12.1, 3.7));
 
+	cout << "Bauelement 1:" << endl << "Preis: " << b1.getKosten() << endl << "Position: " << b1.getPosition() << endl;
+
     return 0;
 }
 

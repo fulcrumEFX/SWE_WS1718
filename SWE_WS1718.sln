@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Übung1 Function Pointer", "Übung1\Übung1.vcxproj", "{1001C3D0-7981-4F93-AC39-8A97F4C672BA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Übung2 Klassen (Punkt)", "Übung 2\Übung 2.vcxproj", "{C23C6314-F480-44E1-9FF1-AD799E24FD3A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Übung2 Klassen (Punkt)", "Übung2\Übung 2.vcxproj", "{C23C6314-F480-44E1-9FF1-AD799E24FD3A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Übung3 Wiederverwendung vorhandener Klassen", "Übung3 Wiederverwendung vorhandener Klassen\Übung3 Wiederverwendung vorhandener Klassen.vcxproj", "{38AAE3EC-A32A-4454-8229-0BBE0AC1379D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Übung3 Wiederverwendung vorhandener Klassen", "Übung3\Übung3 Wiederverwendung vorhandener Klassen.vcxproj", "{38AAE3EC-A32A-4454-8229-0BBE0AC1379D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,5 +44,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56532CD0-1948-4827-B691-C01A47ED00FC}
 	EndGlobalSection
 EndGlobal
