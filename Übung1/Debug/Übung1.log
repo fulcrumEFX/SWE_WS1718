@@ -1,9 +1,0 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Übung1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Übung1.cpp
-c:\users\swe.stu\documents\visual studio 2015\projects\swe_ws1718_12102017\übung1\übung1.cpp(12): warning C4091: "typedef ": Ignoriert auf der linken Seite von "Vektor", wenn keine Variable deklariert wurde
-c:\users\swe.stu\documents\visual studio 2015\projects\swe_ws1718_12102017\übung1\übung1.cpp(27): error C2143: Syntaxfehler: Es fehlt ";" vor "}"
-c:\users\swe.stu\documents\visual studio 2015\projects\swe_ws1718_12102017\übung1\übung1.cpp(29): error C2143: Syntaxfehler: Es fehlt ";" vor "<<"
-c:\users\swe.stu\documents\visual studio 2015\projects\swe_ws1718_12102017\übung1\übung1.cpp(29): error C4430: Fehlender Typspezifizierer - int wird angenommen. Hinweis: "default-int" wird von C++ nicht unterstützt.
-c:\users\swe.stu\documents\visual studio 2015\projects\swe_ws1718_12102017\übung1\übung1.cpp(31): error C2059: Syntaxfehler: "return"
-c:\users\swe.stu\documents\visual studio 2015\projects\swe_ws1718_12102017\übung1\übung1.cpp(32): error C2059: Syntaxfehler: "}"
-c:\users\swe.stu\documents\visual studio 2015\projects\swe_ws1718_12102017\übung1\übung1.cpp(32): error C2143: Syntaxfehler: Es fehlt ";" vor "}"

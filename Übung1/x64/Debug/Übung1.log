@@ -1,9 +1,0 @@
-﻿  stdafx.cpp
-  Übung1.cpp
-c:\users\tobia\documents\visual studio 2017\projects\swe_ws1718\übung1\übung1.cpp(12): warning C4091: 'typedef ': ignored on left of 'Vektor' when no variable is declared
-c:\users\tobia\documents\visual studio 2017\projects\swe_ws1718\übung1\übung1.cpp(27): error C2143: syntax error: missing ';' before '}'
-c:\users\tobia\documents\visual studio 2017\projects\swe_ws1718\übung1\übung1.cpp(29): error C2143: syntax error: missing ';' before '<<'
-c:\users\tobia\documents\visual studio 2017\projects\swe_ws1718\übung1\übung1.cpp(29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\tobia\documents\visual studio 2017\projects\swe_ws1718\übung1\übung1.cpp(31): error C2059: syntax error: 'return'
-c:\users\tobia\documents\visual studio 2017\projects\swe_ws1718\übung1\übung1.cpp(32): error C2059: syntax error: '}'
-c:\users\tobia\documents\visual studio 2017\projects\swe_ws1718\übung1\übung1.cpp(32): error C2143: syntax error: missing ';' before '}'
