@@ -4,6 +4,7 @@ class CPunkt {
 private:
 	double x;
 	double y;
+	friend ostream &operator<<(ostream &, CPunkt const&);
 public:
 	CPunkt(void);					//Konstruktor
 	CPunkt(double _x, double _y);	//Überladener Konstruktor

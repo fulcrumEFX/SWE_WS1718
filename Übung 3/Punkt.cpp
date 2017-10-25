@@ -2,7 +2,7 @@
 #include "punkt.h"
 
 CPunkt::CPunkt()						//Der Konstruktor Initialisiert automatisch die Attribute 
-	: x(1), y(1)						//beim Anlegen einer Klasse
+	: x(0), y(0)						//beim Anlegen einer Klasse
 {}
 CPunkt::CPunkt(double _x, double _y)	//Überladener Konstruktor
 	: x(_x), y(_y)
@@ -24,3 +24,6 @@ double CPunkt::getX(void) {
 double CPunkt::getLength(void) {
 	return  sqrt(pow(getX(), 2) + pow(getY(), 2));
 };
+ostream &operator<<(ostream &os, const CPunkt &m) {
+	return os << m.x << ", " << m.y;
+}

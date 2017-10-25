@@ -1,9 +1,10 @@
+#include "stdafx.h"
 #include "Punkt.h"
 #include "Bauelement.h"
-#include "stdafx.h"
+
 
 CBauelement::CBauelement()
-	: kosten(0), position(0, 0)
+	: kosten(0), position()
 {}
 CBauelement::CBauelement(double _kosten, CPunkt _position)
 	: kosten(_kosten), position(_position)
