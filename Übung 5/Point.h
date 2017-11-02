@@ -14,6 +14,7 @@ public:
 	double getX(void);
 	double getY(void);
 	double getLength(void);
+	
 };
 
 

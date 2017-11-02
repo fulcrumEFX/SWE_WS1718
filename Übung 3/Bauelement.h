@@ -4,14 +4,14 @@
 class CBauelement {
 private:
 	double kosten;
-	CPunkt position;
+	CPoint position;
 public:
 	CBauelement(void);
-	CBauelement(double _kosten, CPunkt _position);
+	CBauelement(double _kosten, CPoint _position);
 	~CBauelement(void);
 	void setKosten(double _kosten);
-	void setPosition(CPunkt _position);
+	void setPosition(CPoint _position);
 	double getKosten(void);
-	CPunkt getPosition(void);
+	CPoint getPosition(void);
 
 };

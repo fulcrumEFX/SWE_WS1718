@@ -6,7 +6,7 @@
 
 int main()
 {
-	CPunkt p1, p2;
+	CPoint p1, p2;
 
 	p1.setX(1.3);
 	p1.setY(4.2);
@@ -21,9 +21,9 @@ int main()
 
 	double x_temp, y_temp;
 	cout << "Punkt 3" << endl << "X = "; cin >> x_temp; cout << "Y = "; cin >> y_temp;	
-	CPunkt p3(x_temp, y_temp);
+	CPoint p3(x_temp, y_temp);
 	cout << "Punkt 4" << endl << "X = "; cin >> x_temp; cout << "Y = "; cin >> y_temp;
-	CPunkt p4(x_temp, y_temp);
+	CPoint p4(x_temp, y_temp);
 
 	cout << "Punkt 3: (" << p3.getX() << "," << p3.getY() << ")" << endl;
 	cout << "Abstand Punkt 3 vom Ursprung: " << p3.getLength() << endl;
