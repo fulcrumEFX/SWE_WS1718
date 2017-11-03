@@ -7,7 +7,6 @@ CComponent::CComponent()
 CComponent::CComponent(double _price, CPoint _position, string _name)
 	: price(_price), position(_position), name(_name)
 {}
-
 CComponent::~CComponent(void)
 {}
 void CComponent::setPrice(double _price)
@@ -20,7 +19,7 @@ void CComponent::setPosition(CPoint _position)
 }
 void CComponent::setName(string _name)
 {
-	cout << "Component name:";
+	cout << "Component name: ";
 	cin >> _name;
 }
 double CComponent::getPrice(void)
@@ -36,7 +35,7 @@ string CComponent::getName(void)
 {
 	return name;
 }
-void print(void)
+void CComponent::ausgabe(void)
 {
 	cout << "Component name: " << name << endl;
 	cout << "Price: " << price << "Euro" << endl;

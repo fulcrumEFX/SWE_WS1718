@@ -9,6 +9,9 @@ CCapacitor::CCapacitor()
 CCapacitor::CCapacitor(double _c)
 	: c(_c)
 {}
+CCapacitor::CCapacitor(string _name, double _c, double xPos, double yPos, double _price)
+	: c(_c), CComponent(_price, CPoint(xPos, yPos), _name)
+{}
 CCapacitor::~CCapacitor()
 {
 }
@@ -16,13 +19,22 @@ void CCapacitor::setValue(double _c)
 {
 	c = _c;
 }
+//void CCapacitor::setOmega(double _omega)
+//{
+//	omega = _omega;
+//}
+//double CCapacitor::getOmega(void)
+//{
+//	return omega;
+//}
 double CCapacitor::getValue(void)
 {
 	return c;
 }
-void ausgabe(void)
+
+void CCapacitor::ausgabe(void)
 {
-	cout << "Capacitor value: " << getValue() << endl;
+	cout << "Capacitor value: " << c << endl;
 
 	CComponent::ausgabe();
 }

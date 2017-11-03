@@ -1,26 +1,27 @@
 #include "stdafx.h"
 #include "Resistor.h"
 
-
 CResistor::CResistor()
-{
-}
+{}
 CResistor::CResistor(double _r)
 	: r(_r)
 {}
+CResistor::CResistor(string _name, double _r, double xPos, double yPos, double _price)
+	: r(_r), CComponent(_price, CPoint(xPos, yPos), _name)
+{}
 CResistor::~CResistor()
 {}
-void setValue(double _r)
+void CResistor::setValue(double _r)
 {
 	r = _r;
 }
-double getValue(void)
+double CResistor::getValue(void)
 {
 	return r;
 }
-void ausgabe(void)
+void CResistor::ausgabe(void)
 {
-	cout << "Resistor value: " << getValue() << endl;
+	cout << "Resistor value: " << r << endl;
 
 	CComponent::ausgabe();
 }
