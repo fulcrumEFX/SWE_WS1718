@@ -12,6 +12,9 @@ public:
 	~CResistor();
 	void setValue(double _r);
 	double getValue(void);
-	void ausgabe(void);
+	void print(void);
+	double getReal(void);
+	double getImag(void);
+	CComplex getComplexImpedance(void);
 };
 

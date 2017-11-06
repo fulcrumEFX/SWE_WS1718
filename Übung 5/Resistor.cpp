@@ -19,9 +19,24 @@ double CResistor::getValue(void)
 {
 	return r;
 }
-void CResistor::ausgabe(void)
+double CResistor::getReal(void)
+{
+	return r;
+}
+double CResistor::getImag(void)
+{
+	return 0;
+}
+CComplex CResistor::getComplexImpedance(void)
+{
+	CComplex _impedance;
+	_impedance.setReal(getReal());
+	_impedance.setImag(getImag());
+	return _impedance;
+}
+void CResistor::print(void)
 {
 	cout << "Resistor value: " << r << endl;
 
-	CComponent::ausgabe();
+	CComponent::print();
 }

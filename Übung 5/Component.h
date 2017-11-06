@@ -1,5 +1,6 @@
 #pragma once
 #include "Point.h"
+#include "Complex.h"
 
 class CComponent {
 protected:
@@ -16,6 +17,6 @@ public:
 	double getPrice(void);
 	CPoint getPosition(void);
 	string getName(void);
-	void ausgabe(void);
+	void print(void);
 
 };

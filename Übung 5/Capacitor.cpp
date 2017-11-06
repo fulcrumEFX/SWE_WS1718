@@ -31,10 +31,24 @@ double CCapacitor::getValue(void)
 {
 	return c;
 }
-
-void CCapacitor::ausgabe(void)
+double CCapacitor::getReal(void)
+{
+	return 0;
+}
+double CCapacitor::getImag(double _omega)
+{
+	return -1 / (c * _omega);
+}
+CComplex CCapacitor::getComplexImpedance(double _omega)
+{
+	CComplex _impedance;
+	_impedance.setReal(getReal());
+	_impedance.setImag(getImag(_omega));
+	return _impedance;
+}
+void CCapacitor::print(void)
 {
 	cout << "Capacitor value: " << c << endl;
 
-	CComponent::ausgabe();
+	CComponent::print();
 }

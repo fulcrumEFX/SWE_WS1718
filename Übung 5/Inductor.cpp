@@ -29,10 +29,24 @@ double CInductor::getValue(void)
 {
 	return l;
 }
-
-void CInductor::ausgabe(void)
+double CInductor::getReal(void)
+{
+	return 0;
+}
+double CInductor::getImag(double _omega)
+{
+	return l * _omega;
+}
+CComplex CInductor::getComplexImpedance(double _omega)
+{
+	CComplex _impedance;
+	_impedance.setReal(getReal());
+	_impedance.setImag(getImag(_omega));
+	return _impedance;
+}
+void CInductor::print(void)
 {
 	cout << "Inductor value: " << l << endl;
 
-	CComponent::ausgabe();
+	CComponent::print();
 }

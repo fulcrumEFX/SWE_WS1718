@@ -35,7 +35,7 @@ string CComponent::getName(void)
 {
 	return name;
 }
-void CComponent::ausgabe(void)
+void CComponent::print(void)
 {
 	cout << "Component name: " << name << endl;
 	cout << "Price: " << price << "Euro" << endl;

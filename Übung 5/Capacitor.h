@@ -12,9 +12,12 @@ public:
 	CCapacitor(string _name, double _c, double xPos, double yPos, double _price);
 	~CCapacitor();
 	void setValue(double _c);
-	//void setOmega(double _omega);
+	double getReal(void);
+	double getImag(double _omega);
 	double getValue(void);
+	CComplex getComplexImpedance(double _omega);
+	void print(void);
+	//void setOmega(double _omega);
 	//double getOmega(void);
-	void ausgabe(void);
 };
 
