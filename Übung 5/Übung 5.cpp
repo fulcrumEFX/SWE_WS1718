@@ -24,14 +24,14 @@ int main()
 	cout << "Z in exponential form: " << z.getAbsolute() << "e^(" << z.getAngle() << ")" << endl;
 
 	//Aufgabe 6
-	ofstream frequency_response;
-	frequency_response.open("data.txt");
+	ofstream data;
+	data.open("frequency_response.txt");
 	for (int i = 0; i < 1001; i++)
 	{
 		omega = i * 2 * M_PI;
 		z.setReal(r1.getReal() + l1.getReal() + c1.getReal());
 		z.setImag(r1.getImag() + l1.getImag(omega) + c1.getImag(omega));
-		frequency_response << z.getAbsolute() << " " << z.getAngle() << endl;
+		data << z.getAbsolute() << " " << z.getAngle() << endl;
 	}
 	return 0;
 }
