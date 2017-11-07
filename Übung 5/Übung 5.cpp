@@ -29,8 +29,8 @@ int main()
 	for (int i = 0; i < 1001; i++)
 	{
 		omega = i * 2 * M_PI;
-		z.setReal(r1.getReal() + l1.getReal() + c1.getReal());
-		z.setImag(r1.getImag() + l1.getImag(omega) + c1.getImag(omega));
+		z.setReal(r1.getReal());
+		z.setImag(l1.getImag(omega) + c1.getImag(omega));
 		data << z.getAbsolute() << " " << z.getAngle() << endl;
 	}
 	data.close();
