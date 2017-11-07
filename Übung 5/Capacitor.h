@@ -5,7 +5,6 @@ class CCapacitor :
 {
 private:
 	double c;
-	//double omega;
 public:
 	CCapacitor();
 	CCapacitor(double _c);
@@ -17,7 +16,4 @@ public:
 	double getValue(void);
 	CComplex getComplexImpedance(double _omega);
 	void print(void);
-	//void setOmega(double _omega);
-	//double getOmega(void);
 };
-

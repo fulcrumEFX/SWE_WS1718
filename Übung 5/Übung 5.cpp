@@ -1,4 +1,4 @@
-// Übung 4.cpp : Definiert den Einstiegspunkt für die Konsolenanwendung.
+// ï¿½bung 4.cpp : Definiert den Einstiegspunkt fï¿½r die Konsolenanwendung.
 //
 
 #include "stdafx.h"
@@ -13,6 +13,13 @@ int main()
 	CCapacitor c1("C1", 0.0003, 2, 5, 0.15);
 	
 	cout << r1.getName() << " " << r1.getValue() << "Ohm " << r1.getPrice() << " Euro " << r1.getPosition() << " " << endl;
-    return 0;
-}
 
+	CComplex z;
+	double omega = 41.09 * 2 * M_PI;
+	z.setReal(r1.getReal()+l1.getReal()+c1.getReal());
+	z.setImag(r1.getImag()+l1.getImag(omega)+c1.getImag(omega));
+
+	cout << "Z total: " << z << endl;
+
+	return 0;
+}

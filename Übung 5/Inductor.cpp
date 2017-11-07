@@ -17,14 +17,6 @@ void CInductor::setValue(double _l)
 {
 	l = _l;
 }
-//void CInductor::setOmega(double _omega)
-//{
-//	omega = _omega;
-//}
-//double CInductor::getOmega(void)
-//{
-//	return omega;
-//}
 double CInductor::getValue(void)
 {
 	return l;

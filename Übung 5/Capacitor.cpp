@@ -19,14 +19,6 @@ void CCapacitor::setValue(double _c)
 {
 	c = _c;
 }
-//void CCapacitor::setOmega(double _omega)
-//{
-//	omega = _omega;
-//}
-//double CCapacitor::getOmega(void)
-//{
-//	return omega;
-//}
 double CCapacitor::getValue(void)
 {
 	return c;

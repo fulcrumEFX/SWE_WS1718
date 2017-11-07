@@ -15,9 +15,6 @@ public:
 	double getReal(void);
 	double getImag(double _omega);
 	CComplex getComplexImpedance(double _omega);
-	//void setOmega(double _omega);
 	double getValue(void);
-	//double getOmega(void);
 	void print(void);
 };
-
