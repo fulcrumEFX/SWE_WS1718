@@ -33,5 +33,6 @@ int main()
 		z.setImag(r1.getImag() + l1.getImag(omega) + c1.getImag(omega));
 		data << z.getAbsolute() << " " << z.getAngle() << endl;
 	}
+	data.close();
 	return 0;
 }
