@@ -26,7 +26,7 @@ int main()
 	//Aufgabe 6
 	ofstream data;
 	data.open("frequency_response.txt");
-	for (int i = 0; i < 1001; i++)
+	for (int i = 1; i < 1001; i++)
 	{
 		omega = i * 2 * M_PI;
 		z.setReal(r1.getReal());
