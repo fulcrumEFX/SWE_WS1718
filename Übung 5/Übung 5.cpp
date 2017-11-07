@@ -20,6 +20,7 @@ int main()
 	z.setImag(r1.getImag()+l1.getImag(omega)+c1.getImag(omega));
 
 	cout << "Z total: " << z << endl;
+	cout << "Z in exponential form: " << z.getAbsolute() << "e^(" << z.getAngle() << ")" << endl;
 
 	return 0;
 }
