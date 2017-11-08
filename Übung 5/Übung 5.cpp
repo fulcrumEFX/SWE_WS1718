@@ -1,6 +1,3 @@
-// �bung 4.cpp : Definiert den Einstiegspunkt f�r die Konsolenanwendung.
-//
-
 #include "stdafx.h"
 #include "Capacitor.h"
 #include "Inductor.h"
