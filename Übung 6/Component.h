@@ -18,5 +18,4 @@ public:
 	CPoint getPosition(void);
 	string getName(void);
 	void print(void);
-
 };
