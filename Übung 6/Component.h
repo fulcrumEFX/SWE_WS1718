@@ -18,4 +18,6 @@ public:
 	CPoint getPosition(void);
 	string getName(void);
 	void print(void);
+	/*virtual double getReal(void);
+	virtual double getImag(double _omega);*/
 };
