@@ -23,7 +23,7 @@ double CResistor::getReal(void)
 {
 	return r;
 }
-double CResistor::getImag(void)
+double CResistor::getImag(double _omega)
 {
 	return 0;
 }
@@ -31,7 +31,7 @@ CComplex CResistor::getComplexImpedance(void)
 {
 	CComplex _impedance;
 	_impedance.setReal(getReal());
-	_impedance.setImag(getImag());
+	_impedance.setImag(getImag(0));
 	return _impedance;
 }
 void CResistor::print(void)

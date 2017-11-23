@@ -24,5 +24,6 @@ public:
 	CComplex CComplex::operator-(const CComplex _c);
 	CComplex CComplex::operator*(const CComplex _c);
 	CComplex CComplex::operator/(const CComplex _c);
+	CComplex getInverse(void) const;
 };
 
