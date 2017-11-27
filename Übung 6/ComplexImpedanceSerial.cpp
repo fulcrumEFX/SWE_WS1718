@@ -3,13 +3,9 @@
 
 
 CComplexImpedanceSerial::CComplexImpedanceSerial()
-{
-}
-
-
+{}
 CComplexImpedanceSerial::~CComplexImpedanceSerial()
-{
-}
+{}
 
 CComplex CComplexImpedanceSerial::getComplexImpedance(double _omega)
 {

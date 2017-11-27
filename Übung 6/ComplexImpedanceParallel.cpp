@@ -3,11 +3,9 @@
 
 
 CComplexImpedanceParallel::CComplexImpedanceParallel()
-{
-}
+{}
 CComplexImpedanceParallel::~CComplexImpedanceParallel()
-{
-}
+{}
 
 CComplex CComplexImpedanceParallel::getComplexImpedance(double _omega)
 {

@@ -1,15 +1,17 @@
 #include "stdafx.h"
 #include "LinkedList.h"
 
+//Linked List Member functions
 CLinkedList::CLinkedList(){
     head = NULL;
 }
 CLinkedList::~CLinkedList(){
     node * current = head;
+	node * nextPtr;
 	while (current != NULL) {
-		node * next = current->next;
+		nextPtr = current->next;
 		delete current;
-		current = next;
+		current = nextPtr;
 	}
 	head = NULL;
 }
@@ -18,18 +20,17 @@ node * CLinkedList::getHead(void)
 	return head;
 }
 void CLinkedList::add(CComponent * _cp){
-    node *n = new node;
+	node *n = new node;
     n->data= _cp;
     n->next = head;
     head = n;
 }
-
 void CLinkedList::print(void){
     node *temp = new node;
     temp = head;
     while (temp!=NULL)
     {
-        (*temp->data).print();
+        temp->data->print();
         temp = temp->next;
     }
 	delete temp;
@@ -49,21 +50,24 @@ void CLinkedList::del(CComponent * _cp) {
 	while ((*ptr)->data != _cp) {
 		ptr = &(*ptr)->next; 
 	}
-	
-	//delete ptr;
 	*ptr = (*ptr)->next;
 }
 
-//CComplex CLinkedList::getComplexImpedance(double _omega)
-//{
-//	CComplex result;
-//	CComplex temp;
-//	node *ptr = head;
-//	while (ptr->next != NULL) {
-//		temp.setReal(ptr->data->getReal());
-//		temp.setImag(ptr->data->getImag(_omega));
-//		result = result + temp;
-//		ptr = ptr->next;
-//	}
-//	return result;
-//}
+//Template Search function implementation including specific compare functions
+template <typename T>
+CComponent * search(bool (* fPtr)(CComponent *, T), T t2){
+	CComponent * ptr;
+	for (ptr = head; ptr != NULL; ptr = ptr->next){
+		if (fPtr(ptr, t2)) return ptr;
+	}
+	return NULL;
+}
+bool nameSearch(CComponent * _comp1, string _name){
+	return (_comp1->getName() == _name);
+}
+bool priceSearch(CComponent * _comp1, double _price){
+	return (_comp1->getPrice() == _price);
+}
+bool positionSearch(CComponent * _comp1, CPoint _pos){
+	return ((_comp1->getPosition.getX() == _pos.getX()) && (_comp1->getPosition.getY() == _pos.getY()));
+}

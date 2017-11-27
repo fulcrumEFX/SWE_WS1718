@@ -8,7 +8,9 @@ CComponent::CComponent(double _price, CPoint _position, string _name)
 	: price(_price), position(_position), name(_name)
 {}
 CComponent::~CComponent(void)
-{}
+{
+	
+}
 void CComponent::setPrice(double _price)
 {
 	price = _price;

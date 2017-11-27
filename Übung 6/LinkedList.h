@@ -3,8 +3,8 @@
 
 class node {
 public:
-    node * next;
-    CComponent * data;
+	node * next;
+	CComponent * data;
 };
 
 class CLinkedList{
