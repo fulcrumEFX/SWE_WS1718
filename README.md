@@ -1,4 +1,4 @@
-# SWE_WS1718
+﻿# SWE_WS1718
 Vorlesung Softwareentwicklung THM
 
 ## Übung 1
@@ -16,3 +16,6 @@ Koordinaten auf einer Platine (Verwendung von Punkt aus Übung 2)
 
 ## Übung 5
 Vererbung
+
+## Übung 6
+Container-Klasse / Polymorphie
