@@ -35,11 +35,11 @@ void CLinkedList::print(void){
     }
 	delete temp;
 }
-node * CLinkedList::find(CComponent * _cp){
+node * CLinkedList::find(string _name){
     node *ptr = NULL;
 	for (ptr = head; ptr != NULL; ptr = ptr->next)
 	{
-		if (ptr->data->getName() == _cp->getName()){
+		if (ptr->data->getName() == _name){
 			return ptr;
 		}
 	}
@@ -54,20 +54,3 @@ void CLinkedList::del(CComponent * _cp) {
 }
 
 //Template Search function implementation including specific compare functions
-template <typename T>
-CComponent * search(bool (* fPtr)(CComponent *, T), T t2){
-	CComponent * ptr;
-	for (ptr = head; ptr != NULL; ptr = ptr->next){
-		if (fPtr(ptr, t2)) return ptr;
-	}
-	return NULL;
-}
-bool nameSearch(CComponent * _comp1, string _name){
-	return (_comp1->getName() == _name);
-}
-bool priceSearch(CComponent * _comp1, double _price){
-	return (_comp1->getPrice() == _price);
-}
-bool positionSearch(CComponent * _comp1, CPoint _pos){
-	return ((_comp1->getPosition.getX() == _pos.getX()) && (_comp1->getPosition.getY() == _pos.getY()));
-}

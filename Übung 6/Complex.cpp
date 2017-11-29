@@ -42,7 +42,7 @@ void CComplex::setImag(double _imag)
 	imag = _imag;
 }
 ostream &operator<<(ostream &os, const CComplex &m) {
-	if (m.imag < 0) return os << m.real <<"-j"<< abs(m.imag);			//Ausgabe durch überladen des
+	if (m.imag < 0) return os << m.real <<"-j"<< abs(m.imag);			//Ausgabe durch ï¿½berladen des
 	else return os << m.real << "+j" << m.imag ;						//Operators
 }
 CComplex CComplex::operator+(const CComplex _c)
@@ -74,8 +74,5 @@ CComplex CComplex::operator/(const CComplex _c){
 
 CComplex CComplex::getInverse(void) const
 {
-	CComplex result;
-	result.setReal(real / ((real * real) + (imag * imag)));
-	result.setImag((-1 * imag) / ((real * real) + (imag * imag)));
-	return result;
+	return CComplex((real / ((real * real) + (imag * imag))),((-1 * imag) / ((real * real) + (imag * imag))));
 }
