@@ -38,6 +38,6 @@ inline bool nameSearch(node * _node1, string _name){
 inline bool priceSearch(node * _node1, double _price){
 	return (_node1->data->getPrice() == _price);
 }
-inline bool positionSearch(node * _node1, CPoint _pos){
+inline bool positionSearch(node * _node1, CPointy _pos){
 	return ((_node1->data->getPosition().getX() == _pos.getX()) && (_node1->data->getPosition().getY() == _pos.getY()));
 }

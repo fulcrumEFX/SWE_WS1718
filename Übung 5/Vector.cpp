@@ -4,7 +4,7 @@
 CVector::CVector()
 	: p1(0, 0), p2(0, 0)
 {}
-CVector::CVector(CPoint _p1, CPoint _p2)
+CVector::CVector(CPointy _p1, CPointy _p2)
 	: p1(_p1), p2(_p2)
 {}
 CVector::~CVector()

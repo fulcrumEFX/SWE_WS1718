@@ -7,7 +7,7 @@ CResistor::CResistor(double _r)
 	: r(_r)
 {}
 CResistor::CResistor(string _name, double _r, double xPos, double yPos, double _price)
-	: r(_r), CComponent(_price, CPoint(xPos, yPos), _name)
+	: r(_r), CComponent(_price, CPointy(xPos, yPos), _name)
 {}
 CResistor::~CResistor()
 {}

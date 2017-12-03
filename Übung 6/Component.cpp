@@ -4,7 +4,7 @@
 CComponent::CComponent()
 	: price(0), position(CPoint(0, 0)), name()
 {}
-CComponent::CComponent(double _price, CPoint _position, string _name)
+CComponent::CComponent(double _price, CPointy _position, string _name)
 	: price(_price), position(_position), name(_name)
 {}
 CComponent::~CComponent(void)
@@ -15,7 +15,7 @@ void CComponent::setPrice(double _price)
 {
 	price = _price;
 }
-void CComponent::setPosition(CPoint _position)
+void CComponent::setPosition(CPointy _position)
 {
 	position = _position;
 }
@@ -28,7 +28,7 @@ double CComponent::getPrice(void)
 {
 	return price;
 }
-CPoint CComponent::getPosition(void)
+CPointy CComponent::getPosition(void)
 {
 	return position;
 }

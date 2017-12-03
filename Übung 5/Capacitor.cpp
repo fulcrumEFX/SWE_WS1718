@@ -10,7 +10,7 @@ CCapacitor::CCapacitor(double _c)
 	: c(_c)
 {}
 CCapacitor::CCapacitor(string _name, double _c, double xPos, double yPos, double _price)
-	: c(_c), CComponent(_price, CPoint(xPos, yPos), _name)
+	: c(_c), CComponent(_price, CPointy(xPos, yPos), _name)
 {}
 CCapacitor::~CCapacitor()
 {

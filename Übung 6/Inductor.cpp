@@ -9,7 +9,7 @@ CInductor::CInductor(double _l)
 	: l(_l)
 {}
 CInductor::CInductor(string _name, double _l, double xPos, double yPos, double _price)
-	: l(_l), CComponent(_price, CPoint(xPos, yPos), _name)
+	: l(_l), CComponent(_price, CPointy(xPos, yPos), _name)
 {}
 CInductor::~CInductor()
 {}

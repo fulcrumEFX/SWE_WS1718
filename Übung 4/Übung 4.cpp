@@ -13,7 +13,7 @@ int main()
 
 	cout << "Komplexe Zahl: " << J << endl;
 
-	CVector v1(CPoint(1, 2), CPoint(4, 9));
+	CVector v1(CPointy(1, 2), CPointy(4, 9));
 	cout << "Vektor v1: " << v1 << endl;
     return 0;
 }

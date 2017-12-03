@@ -6,7 +6,7 @@
 CBauelement::CBauelement()
 	: kosten(0), position()
 {}
-CBauelement::CBauelement(double _kosten, CPoint _position)
+CBauelement::CBauelement(double _kosten, CPointy _position)
 	: kosten(_kosten), position(_position)
 {}
 
@@ -16,7 +16,7 @@ void CBauelement::setKosten(double _kosten)
 {
 	kosten = _kosten;
 }
-void CBauelement::setPosition(CPoint _position)
+void CBauelement::setPosition(CPointy _position)
 {
 	position = _position;
 }
@@ -24,7 +24,7 @@ double CBauelement::getKosten(void)
 {
 	return kosten;
 }
-CPoint CBauelement::getPosition(void)
+CPointy CBauelement::getPosition(void)
 {
 	return position;
 }
