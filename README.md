@@ -19,3 +19,6 @@ Vererbung
 
 ## Übung 6
 Container-Klasse / Polymorphie
+
+## Übung 7 (Exercise 7)
+GUI mit MFC
