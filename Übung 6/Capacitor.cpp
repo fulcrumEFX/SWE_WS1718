@@ -6,12 +6,16 @@ CCapacitor::CCapacitor()
 	: c(0)
 {
 }
-CCapacitor::CCapacitor(double _c)
-	: c(_c)
-{}
 CCapacitor::CCapacitor(string _name, double _c, double xPos, double yPos, double _price)
 	: c(_c), CComponent(_price, CPointy(xPos, yPos), _name)
-{}
+{
+	static int count;
+	ostringstream tempstr;
+	tempstr << count;
+	string s = "C" + tempstr.str();
+	count++;
+	this->setName(s);
+}
 CCapacitor::~CCapacitor()
 {
 }

@@ -3,12 +3,16 @@
 
 CResistor::CResistor()
 {}
-CResistor::CResistor(double _r)
-	: r(_r)
-{}
 CResistor::CResistor(string _name, double _r, double xPos, double yPos, double _price)
 	: r(_r), CComponent(_price, CPointy(xPos, yPos), _name)
-{}
+{
+	static int count;
+	ostringstream tempstr;
+	tempstr << count;
+	string s = "R" + tempstr.str();
+	count++;
+	this->setName(s);
+}
 CResistor::~CResistor()
 {}
 void CResistor::setValue(double _r)

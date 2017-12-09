@@ -2,7 +2,7 @@
 #include "Component.h"
 
 CComponent::CComponent()
-	: price(0), position(CPoint(0, 0)), name()
+	: price(0), position(CPointy(0, 0)), name()
 {}
 CComponent::CComponent(double _price, CPointy _position, string _name)
 	: price(_price), position(_position), name(_name)

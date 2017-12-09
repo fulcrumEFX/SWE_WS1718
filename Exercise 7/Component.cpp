@@ -19,7 +19,6 @@ void CComponent::setPosition(CPointy _position)
 {
 	position = _position;
 }
-
 double CComponent::getPrice(void)
 {
 	return price;

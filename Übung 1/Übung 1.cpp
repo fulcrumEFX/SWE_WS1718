@@ -23,11 +23,11 @@ double minFinden(Vektor feld[], int laenge) {
 int main()
 {
 	
-	Vektor Vektorfeld[5] = { 2,3, 4,-1, 5,9, 12,3, 1,1 }
-};
+	Vektor Vektorfeld[5] = { 2,3, 4,-1, 5,9, 12,3, 1,1 };
+
 	//int zahlenfeld[10] = { 1,6,2,9,-12,5,23,45,-45,14 };
 	cout << endl << "Min. Wert = " << minFinden(Vektorfeld, 5);
 
     return 0;
-}
+};
 

@@ -52,5 +52,3 @@ void CLinkedList::del(CComponent * _cp) {
 	}
 	*ptr = (*ptr)->next;
 }
-
-//Template Search function implementation including specific compare functions
