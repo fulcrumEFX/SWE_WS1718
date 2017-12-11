@@ -5,15 +5,17 @@
 CInductor::CInductor()
 	:l(0)
 {}
-
 CInductor::CInductor(string _name, double _l, double xPos, double yPos, double _price)
 	: l(_l), CComponent(_price, CPointy(xPos, yPos), _name)
+{}
+CInductor::CInductor(double _l, double xPos, double yPos, double _price)
+	: l(_l), CComponent(_price, CPointy(xPos, yPos))
 {
 	static int count;
+	count++;
 	ostringstream tempstr;
 	tempstr << count;
 	string s = "L" + tempstr.str();
-	count++;
 	this->setName(s);
 }
 CInductor::~CInductor()

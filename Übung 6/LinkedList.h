@@ -20,7 +20,7 @@ public:
     void add(CComponent * _cp);
     void print(void);
     node * find(string _name);
-    void del(CComponent * _cp);
+    void del(node * _cp);
 
 	template <typename T>
 	node * search(bool (* fPtr)(node *, T), T t2){

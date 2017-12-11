@@ -45,10 +45,13 @@ node * CLinkedList::find(string _name){
 	}
 	return NULL;
 }
-void CLinkedList::del(CComponent * _cp) {
+void CLinkedList::del(node * _cp) {
 	node **ptr = &head;
-	while ((*ptr)->data != _cp) {
+	node *tmp = NULL;
+	while ((*ptr) != _cp) {
 		ptr = &(*ptr)->next; 
 	}
+	tmp = *ptr;
 	*ptr = (*ptr)->next;
+	delete tmp;
 }

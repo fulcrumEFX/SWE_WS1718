@@ -11,6 +11,7 @@ protected:
 public:
 	CComponent(void);
 	CComponent(double _price, CPointy _position, string _name);
+	CComponent(double _price, CPointy _position);
 	~CComponent(void);
 	void setPrice(double _price);
 	void setPosition(CPointy _position);

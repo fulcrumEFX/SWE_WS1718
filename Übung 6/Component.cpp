@@ -7,6 +7,9 @@ CComponent::CComponent()
 CComponent::CComponent(double _price, CPointy _position, string _name)
 	: price(_price), position(_position), name(_name)
 {}
+CComponent::CComponent(double _price, CPointy _position)
+	: price(_price), position(_position)
+{}
 CComponent::~CComponent(void)
 {
 	
@@ -21,8 +24,7 @@ void CComponent::setPosition(CPointy _position)
 }
 void CComponent::setName(string _name)
 {
-	cout << "Component name: ";
-	cin >> _name;
+	name = _name;
 }
 double CComponent::getPrice(void)
 {

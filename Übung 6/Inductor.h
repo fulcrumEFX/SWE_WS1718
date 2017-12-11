@@ -8,8 +8,8 @@ private:
 	double omega;
 public:
 	CInductor();
-	CInductor(double _l);
 	CInductor(string _name, double _l, double xPos, double yPos, double _price);
+	CInductor(double _l, double xPos, double yPos, double _price);
 	~CInductor();
 	void setValue(double _l);
 	double getReal(void);
