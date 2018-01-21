@@ -1,8 +1,11 @@
 #pragma once
 #include "Complex.h"
-#include "LinkedList.h"
+#include "node.h"
+#include "Resistor.h"
+#include "Capacitor.h"
+#include "Inductor.h"
 
-class CComplexImpedance : public CLinkedList {
+class CComplexImpedance {
 public:
-	virtual CComplex getComplexImpedance(double _omega) = 0;
+	virtual CComplex getComplexImpedance(double _omega, node* _head) = 0;
 };

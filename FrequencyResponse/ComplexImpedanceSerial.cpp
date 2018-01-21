@@ -2,16 +2,18 @@
 #include "ComplexImpedanceSerial.h"
 
 
+
+
 CComplexImpedanceSerial::CComplexImpedanceSerial()
 {}
 CComplexImpedanceSerial::~CComplexImpedanceSerial()
 {}
 
-CComplex CComplexImpedanceSerial::getComplexImpedance(double _omega)
+CComplex CComplexImpedanceSerial::getComplexImpedance(double _omega, node* _head)
 {
 	CComplex result(0,0);
 	node *ptr = NULL;
-	for (ptr = head; ptr != NULL; ptr = ptr->next){
+	for (ptr = _head; ptr != NULL; ptr = ptr->next) {
 		if (ptr->data->getName()[0] == 'R')
 		result = result + CComplex(((CResistor*)ptr)->getReal(), ((CResistor*)ptr)->getImag(_omega));
 		if (ptr->data->getName()[0] == 'L')

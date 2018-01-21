@@ -3,24 +3,26 @@
 #include "Resistor.h"
 #include "Capacitor.h"
 #include "Inductor.h"
+#include "node.h"
+#include "ComplexImpedance.h"
 
-class node {
-public:
-	node* next;
-	CComponent* data;
-};
 
-class CLinkedList{
+
+class CLinkedList : public node{
 protected:
 	node* head = NULL;
+	CComplexImpedance* wiringPtr;
 public:
 	CLinkedList();
     ~CLinkedList();
 	node* getHead(void);
-    void add(CComponent * _cp);
-    node* find(std::string _name);
-    void del(CComponent * _cp);
-	/*CComplex getComplexImpedance(double _omega);*/
+	void setWiringPtr(CComplexImpedance* _wiring);
+	CComplex getComplexImpedance(double _omega, node* _head);
+	CComplexImpedance* getWiringPtr(void);
+
+	void add(CComponent * _cp);
+	node* find(std::string _name);
+	void del(CComponent * _cp);
 
 	template <typename T>
 	node* search(bool (* fPtr)(node*, T), T t2){

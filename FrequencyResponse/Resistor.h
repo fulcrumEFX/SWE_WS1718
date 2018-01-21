@@ -9,6 +9,7 @@ public:
 	CResistor();
 	CResistor(double _r);
 	CResistor(double _r, double xPos, double yPos, double _price);
+	CResistor(std::string _name, double _r, double xPos, double yPos, double _price);
 	~CResistor();
 	void setValue(double _r);
 	void setName(std::string _name);

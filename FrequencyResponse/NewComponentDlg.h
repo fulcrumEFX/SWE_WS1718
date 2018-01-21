@@ -26,7 +26,6 @@ public:
 	CComboBox m_Components;
 	CComboBox m_Unit;
 	afx_msg void OnCbnSelchangeCombo1();
-//	afx_msg void OnBnClickedButton2();
 	double value;
 	double price;
 	int x_coord;
@@ -35,5 +34,4 @@ public:
 	int indx;
 	int unitIndx;
 	afx_msg void OnCbnSelchangeCombo2();
-//	afx_msg void OnEnChangeEdit3();
 };

@@ -43,4 +43,20 @@ void CLinkedList::del(CComponent* _cp) {
 	*ptr = (*ptr)->next;
 }
 
+CComplex CLinkedList::getComplexImpedance(double _omega, node* _head)
+{
+	double omega = _omega;
+	return wiringPtr->getComplexImpedance(omega, _head);
+}
+
+void CLinkedList::setWiringPtr(CComplexImpedance * _wiring)
+{
+	wiringPtr = _wiring;
+}
+
+CComplexImpedance * CLinkedList::getWiringPtr(void)
+{
+	return wiringPtr;
+}
+
 //Template Search function implementation including specific compare functions
