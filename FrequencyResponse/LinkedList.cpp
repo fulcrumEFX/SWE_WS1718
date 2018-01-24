@@ -46,7 +46,8 @@ void CLinkedList::del(CComponent* _cp) {
 CComplex CLinkedList::getComplexImpedance(double _omega, node* _head)
 {
 	double omega = _omega;
-	return wiringPtr->getComplexImpedance(omega, _head);
+	node* head = _head;
+	return wiringPtr->getComplexImpedance(omega, head);
 }
 
 void CLinkedList::setWiringPtr(CComplexImpedance * _wiring)
