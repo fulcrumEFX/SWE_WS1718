@@ -23,4 +23,13 @@ double CPointy::getX(void) {
 };
 double CPointy::getLength(void) {
 	return  std::sqrt(std::pow(getX(), 2) + pow(getY(), 2));
-};
+}
+CPointy CPointy::operator+(const CPointy & _p)
+{
+	CPointy _point;
+	_point.x = this->x + _p.x;
+	_point.y = this->y + _p.y;
+	
+	return _point;
+}
+;

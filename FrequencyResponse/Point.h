@@ -13,6 +13,8 @@ public:
 	double getX(void);
 	double getY(void);
 	double getLength(void);
+
+	CPointy operator+(const CPointy& _p);
 	
 };
 
