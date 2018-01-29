@@ -1,8 +1,15 @@
 #pragma once
 #include "Point.h"
 
-#define LEFT_MARGIN 20
-#define UPPER_MARGIN 16
+#define LEFT_MARGIN 20				//Offset from Window border
+#define UPPER_MARGIN 16				
+#define X_OFFSET 230				//Offset from left side of the Window
+#define FRAME_SPACING 10		//Space between both Frames of Bode Diagram
+#define FRAME_HEIGHT 200			//Frame Height
+#define FRAME_WIDTH 570				//Frame Width
+#define Y_AXIS_X_OFFSET 10			//Offset Y-Axis in x direction from Frame
+#define Y_AXIS_Y_OFFSET 10			//Offset Y-Axis from top+bottom of Frame
+#define COLOR_BLACK RGB(0,0,0)
 
 class CGraph
 {
@@ -20,6 +27,7 @@ public:
 	~CGraph();
 
 	void draw(CDC* pDC);
+	void drawFrame(CDC* pDC, CPoint _start) const;
 
 	void setHeight(int _height);
 	void setWidth(int _width);

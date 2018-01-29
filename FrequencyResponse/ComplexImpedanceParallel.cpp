@@ -8,7 +8,7 @@ CComplexImpedanceParallel::CComplexImpedanceParallel()
 CComplexImpedanceParallel::~CComplexImpedanceParallel()
 {}
 
-CComplex CComplexImpedanceParallel::getComplexImpedance(double _omega, node* _head)
+CComplex CComplexImpedanceParallel::getComplexImpedance(double _omega, node* _head) const
 {
 	CComplex result(0, 0);
 	node *ptr = NULL;

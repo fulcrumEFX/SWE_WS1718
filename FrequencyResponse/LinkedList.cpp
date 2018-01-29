@@ -6,7 +6,7 @@ CLinkedList::CLinkedList(){
     head = NULL;
 }
 CLinkedList::~CLinkedList(){
-    node* current = head;
+    node* current = this->head;
 	node* nextPtr;
 	while (current != NULL) {
 		nextPtr = current->next;

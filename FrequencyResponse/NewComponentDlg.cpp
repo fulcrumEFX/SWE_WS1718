@@ -58,12 +58,12 @@ BOOL CNewComponentDlg::OnInitDialog()
 {
 	CDialog::OnInitDialog();
 
-	m_Components.AddString("Capacitor");
-	m_Components.AddString("Inductor");
-	m_Components.AddString("Resistor");
-	m_Unit.AddString("Ohm");
-	m_Unit.AddString("kOhm");
-	m_Unit.AddString("MOhm");
+	m_Components.AddString(_T("Capacitor"));
+	m_Components.AddString(_T("Inductor"));
+	m_Components.AddString(_T("Resistor"));
+	m_Unit.AddString(_T("Ohm"));
+	m_Unit.AddString(_T("kOhm"));
+	m_Unit.AddString(_T("MOhm"));
 	m_Components.SetCurSel(2);
 	m_Unit.SetCurSel(0);
 	unitIndx = m_Unit.GetCurSel();
@@ -77,28 +77,28 @@ void CNewComponentDlg::OnCbnSelchangeCombo1()
 
 	if (indx == 0) {
 		m_Unit.ResetContent();
-		m_Unit.AddString("F");
-		m_Unit.AddString("mF");
-		m_Unit.AddString("µF");
-		m_Unit.AddString("nF");
-		m_Unit.AddString("pF");
+		m_Unit.AddString(_T("F"));
+		m_Unit.AddString(_T("mF"));
+		m_Unit.AddString(_T("µF"));
+		m_Unit.AddString(_T("nF"));
+		m_Unit.AddString(_T("pF"));
 		m_Unit.SetCurSel(3);
 		unitIndx = 3;
 	}
 	if (indx == 1) {
 		m_Unit.ResetContent();
-		m_Unit.AddString("H");
-		m_Unit.AddString("mH");
-		m_Unit.AddString("µH");
-		m_Unit.AddString("nH");
+		m_Unit.AddString(_T("H"));
+		m_Unit.AddString(_T("mH"));
+		m_Unit.AddString(_T("µH"));
+		m_Unit.AddString(_T("nH"));
 		m_Unit.SetCurSel(2);
 		unitIndx = 2;
 	}
 	if (indx == 2) {
 		m_Unit.ResetContent();
-		m_Unit.AddString("Ohm");
-		m_Unit.AddString("kOhm");
-		m_Unit.AddString("MOhm");
+		m_Unit.AddString(_T("Ohm"));
+		m_Unit.AddString(_T("kOhm"));
+		m_Unit.AddString(_T("MOhm"));
 		m_Unit.SetCurSel(0);
 		unitIndx = 0;
 	}

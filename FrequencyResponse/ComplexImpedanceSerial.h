@@ -10,6 +10,6 @@ public:
 	
 	CComplexImpedanceSerial();
 	~CComplexImpedanceSerial();
-	CComplex getComplexImpedance(double _omega, node* _head);
+	CComplex getComplexImpedance(double _omega, node* _head) const;
 };
 

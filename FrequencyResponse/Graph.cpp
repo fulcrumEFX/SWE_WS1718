@@ -91,22 +91,28 @@ int CGraph::getYmax() const
 }
 
 void CGraph::draw(CDC* pDC) {
+	
+	setStart(getOrigin() + CPoint(X_OFFSET, 0));
+	drawFrame(pDC, getStart());
+	drawFrame(pDC, getStart() + CPoint(0, FRAME_HEIGHT + FRAME_SPACING));
+
 	CPen penBlack;
-	penBlack.CreatePen(PS_SOLID, 1, RGB(0,0,0));
-
-	this->setStart(this->getOrigin() + CPoint(230, 0));
-	CSize FrameSize(570, 400);
-	CRect Frame(this->getStart(), FrameSize);
-
-	pDC->Rectangle(&Frame);		//Draw Frame
+	penBlack.CreatePen(PS_SOLID, 1, COLOR_BLACK);
 	pDC->SelectObject(&penBlack);
-	
-	//Divide into 2 Diagrams
-	CPoint oldPoint = this->getStart() + CPoint(0, (FrameSize.cy / 2));
-	pDC->MoveTo(oldPoint);
-	pDC->LineTo(oldPoint + CPoint(FrameSize.cx, 0));
-	//Draw bae of Diagrams
-
-	
-
+		
 }
+
+void CGraph::drawFrame(CDC* pDC, CPoint _start) const
+{
+	CSize FrameSize(FRAME_WIDTH, FRAME_HEIGHT);
+	CRect Frame(_start, FrameSize);
+	pDC->Rectangle(&Frame);
+
+	CPoint referencePoint = _start + CPoint(Y_AXIS_X_OFFSET, (FrameSize.cy / 2));
+	pDC->MoveTo(referencePoint);
+	pDC->LineTo(referencePoint + CPoint(FrameSize.cx - 2 * Y_AXIS_X_OFFSET, 0));
+	pDC->MoveTo(_start + CPoint(Y_AXIS_X_OFFSET, Y_AXIS_Y_OFFSET));
+	pDC->LineTo(_start + CPoint(Y_AXIS_X_OFFSET, FRAME_HEIGHT - Y_AXIS_Y_OFFSET));
+}
+
+

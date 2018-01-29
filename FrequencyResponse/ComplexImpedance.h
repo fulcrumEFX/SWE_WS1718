@@ -7,5 +7,5 @@
 
 class CComplexImpedance {
 public:
-	virtual CComplex getComplexImpedance(double _omega, node* _head) = 0;
+	virtual CComplex getComplexImpedance(double _omega, node* _head) const = 0;
 };

@@ -5,4 +5,7 @@ class node {
 public:
 	node* next;
 	CComponent* data;
+
+	node();
+	~node();
 };

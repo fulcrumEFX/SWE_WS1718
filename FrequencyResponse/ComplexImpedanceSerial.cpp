@@ -9,7 +9,7 @@ CComplexImpedanceSerial::CComplexImpedanceSerial()
 CComplexImpedanceSerial::~CComplexImpedanceSerial()
 {}
 
-CComplex CComplexImpedanceSerial::getComplexImpedance(double _omega, node* _head)
+CComplex CComplexImpedanceSerial::getComplexImpedance(double _omega, node* _head) const
 {
 	CComplex result(0,0);
 	node *ptr = NULL;
