@@ -90,16 +90,24 @@ int CGraph::getYmax() const
 	return y_max;
 }
 
-void CGraph::draw(CDC* pDC) {
+void CGraph::draw(CDC* pDC, CLinkedList & _componentList){
 	
 	setStart(getOrigin() + CPoint(X_OFFSET, 0));
 	drawFrame(pDC, getStart());
 	drawFrame(pDC, getStart() + CPoint(0, FRAME_HEIGHT + FRAME_SPACING));
-
+	
+	if (!_componentList.getWiringPtr())
+	std::vector<double> valueArray(X_AXIS_LENGTH + 1, 0);
+	std::vector<double> phaseArray(X_AXIS_LENGTH + 1, 0);
+	for (int i = 0; i <= X_AXIS_LENGTH; i++) {
+		CComplex _complex = _componentList.getComplexImpedance(10 * i, _componentList.getHead());
+	}
+	
 	CPen penBlack;
 	penBlack.CreatePen(PS_SOLID, 1, COLOR_BLACK);
 	pDC->SelectObject(&penBlack);
-		
+
+
 }
 
 void CGraph::drawFrame(CDC* pDC, CPoint _start) const
@@ -113,6 +121,11 @@ void CGraph::drawFrame(CDC* pDC, CPoint _start) const
 	pDC->LineTo(referencePoint + CPoint(FrameSize.cx - 2 * Y_AXIS_X_OFFSET, 0));
 	pDC->MoveTo(_start + CPoint(Y_AXIS_X_OFFSET, Y_AXIS_Y_OFFSET));
 	pDC->LineTo(_start + CPoint(Y_AXIS_X_OFFSET, FRAME_HEIGHT - Y_AXIS_Y_OFFSET));
+}
+
+void CGraph::drawDataPoint(CDC * pDC, double _frequency, double _value)
+{
+	
 }
 
 

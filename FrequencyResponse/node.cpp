@@ -7,5 +7,6 @@ node::node()
 
 node::~node()
 {
-	delete this->data;
+	/* delete this->data;
+	delete this->next; */
 }

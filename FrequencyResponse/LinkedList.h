@@ -11,7 +11,7 @@
 class CLinkedList : public node{
 protected:
 	node* head = NULL;
-	CComplexImpedance* wiringPtr;
+	CComplexImpedance* wiringPtr = NULL;
 public:
 	CLinkedList();
     ~CLinkedList();

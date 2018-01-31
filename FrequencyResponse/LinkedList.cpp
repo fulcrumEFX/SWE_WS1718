@@ -3,10 +3,11 @@
 
 //Linked List Member functions
 CLinkedList::CLinkedList(){
-    head = NULL;
+
+
 }
 CLinkedList::~CLinkedList(){
-    node* current = this->head;
+    node* current = head;
 	node* nextPtr;
 	while (current != NULL) {
 		nextPtr = current->next;
